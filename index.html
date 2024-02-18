@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body class="p-5 lg:p-0">
     <header class="max-w-[1150px] mx-auto" id="header">
         <!-- navbar-section -->
 
@@ -64,14 +64,14 @@
         <!-- banner-section -->
 
         <section
-            class="bg-[url(images/banner.png)] min-h-[550px] min-w-[1150px] bg-no-repeat rounded-[32px] bg-center bg-[length:1150px_550px] mt-[20px]">
+            class="bg-[url(images/banner.png)] lg:min-h-[550px] lg:min-w-[1150px] bg-no-repeat rounded-[32px] bg-center lg:bg-[length:1150px_550px] mt-[20px]">
             <h1 class="font-extrabold text-white text-5xl text-center pt-[100px]">End-to-End Travel with <br><span
                     class=" text-[#1DD100]">P Paribahan</span></h1>
 
-            <h1 class="text-center text-white px-[300px] pt-[20px]">Yes, you can run unit tests and view the results
+            <h1 class="text-center text-white lg:px-[300px] pt-[20px]">Yes, you can run unit tests and view the results
                 directly within the app. The integrated testing features allow for a streamlined .</h1>
 
-            <div class="flex items-center justify-center mt-[70px]">
+            <div class="flex items-center justify-center lg:mt-[70px] my-[20px]">
                 <button class="btn bg-[#1DD100] border-none" id="buyTicketButton">Buy Tickets</button>
             </div>
 
@@ -87,7 +87,7 @@
 
         <section class="flex flex-col items-center">
             <h1 class="text-3xl font-extrabold mb-10 mt-10">Best offers for you</h1>
-            <div class="flex gap-12">
+            <div class="flex gap-12 flex-col lg:flex-row">
                 <div class="flex bg-[#FFBF0F] max-w-[500px] rounded-xl items-center justify-between px-12">
                     <div class="pr-10">
                         <h1 class="font-extrabold text-3xl">15% OFF</h1>
@@ -127,12 +127,12 @@
 
         <section class="max-w-[1150px] mx-auto" id="ticketBuyingSection">
             <h1 class="text-center text-3xl font-extrabold mt-[60px]">P.H Paribahan</h1>
-            <p class="text-center px-[200px] mt-5 mb-10">Yes, you can run unit tests and view the results directly
+            <p class="text-center lg:px-[100px] mt-5 mb-10">Yes, you can run unit tests and view the results directly
                 within the
                 app. The integrated testing features allow for a streamlined .</p>
 
 
-            <div class="flex items-center justify-between bg-white rounded-[24px]">
+            <div class="flex items-center justify-between bg-white rounded-[24px] hidden">
                 <div class="pl-[100px]">
                     <div class="flex justify-between gap-0 pr-8">
                         <div class="flex gap-2 items-center">
@@ -180,8 +180,8 @@
         <!-- ticket-buying-section -->
 
         <section>
-            <div class="flex gap-0 px-12 max-w-[1150px] mx-auto justify-between bg-white rounded-[24px] mt-[50px]">
-                <div class="max-w-[1150px] mt-[50px] border-r-2 pr-[70px] border-dashed">
+            <div class="flex flex-col lg:flex-row gap-0 lg:px-12 max-w-[1150px] mx-auto lg:justify-between bg-white rounded-[24px] mt-[50px]">
+                <div class="max-w-[1150px] mt-[50px] lg:border-r-2 lg:pr-[70px] lg:border-dashed">
                     <h1 class="text-xl font-extrabold  mb-5">Select your Seat</h1>
                     <hr>
                     <div class="flex justify-between">
@@ -199,73 +199,73 @@
 
                     <div class="flex flex-col mt-[20px] gap-5 mb-10">
                         <div class="flex justify-end">
-                            <button class="btn w-[80px]" disabled><img src="images/car-steering-wheel.png"
+                            <button class="btn w-[80px]" disabled><img src="images/tabler-icon-steering-wheel.svg"
                                     alt=""></button>
                         </div>
-                        <div class="flex items-center gap-10 justify-between">
+                        <div class="flex items-center gap-2 lg:gap-10 justify-between">
                             <h1>A</h1>
                             <button class="btn w-[80px] seats">A1</button>
                             <button class="btn w-[80px] seats">A2</button>
                             <button class="btn w-[80px] seats">A3</button>
                             <button class="btn w-[80px] seats">A4</button>
                         </div>
-                        <div class="flex items-center gap-10 justify-between">
+                        <div class="flex items-center gap-2 lg:gap-10 justify-between">
                             <h1>B</h1>
                             <button class="btn w-[80px] seats">B1</button>
                             <button class="btn w-[80px] seats">B2</button>
                             <button class="btn w-[80px] seats">B3</button>
                             <button class="btn w-[80px] seats">B4</button>
                         </div>
-                        <div class="flex items-center gap-10 justify-between">
+                        <div class="flex items-center gap-2 lg:gap-10 justify-between">
                             <h1>C</h1>
                             <button class="btn w-[80px] seats">C1</button>
                             <button class="btn w-[80px] seats">C2</button>
                             <button class="btn w-[80px] seats">C3</button>
                             <button class="btn w-[80px] seats">C4</button>
                         </div>
-                        <div class="flex items-center gap-10 justify-between">
+                        <div class="flex items-center gap-2 lg:gap-10 justify-between">
                             <h1>D</h1>
                             <button class="btn w-[80px] seats">D1</button>
                             <button class="btn w-[80px] seats">D2</button>
                             <button class="btn w-[80px] seats">D3</button>
                             <button class="btn w-[80px] seats">D4</button>
                         </div>
-                        <div class="flex items-center gap-10 justify-between">
+                        <div class="flex items-center gap-2 lg:gap-10 justify-between">
                             <h1>E</h1>
                             <button class="btn w-[80px] seats">E4</button>
                             <button class="btn w-[80px] seats">E1</button>
                             <button class="btn w-[80px] seats">E2</button>
                             <button class="btn w-[80px] seats">E3</button>
                         </div>
-                        <div class="flex items-center gap-10 justify-between">
+                        <div class="flex items-center gap-2 lg:gap-10 justify-between">
                             <h1>F</h1>
                             <button class="btn w-[80px] seats">F1</button>
                             <button class="btn w-[80px] seats">F2</button>
                             <button class="btn w-[80px] seats">F3</button>
                             <button class="btn w-[80px] seats">F4</button>
                         </div>
-                        <div class="flex items-center gap-10 justify-between">
+                        <div class="flex items-center gap-2 lg:gap-10 justify-between">
                             <h1>G</h1>
                             <button class="btn w-[80px] seats">G1</button>
                             <button class="btn w-[80px] seats">G2</button>
                             <button class="btn w-[80px] seats">G3</button>
                             <button class="btn w-[80px] seats">G4</button>
                         </div>
-                        <div class="flex items-center gap-10 justify-between">
+                        <div class="flex items-center gap-2 lg:gap-10 justify-between">
                             <h1>H</h1>
                             <button class="btn w-[80px] seats">H1</button>
                             <button class="btn w-[80px] seats">H2</button>
                             <button class="btn w-[80px] seats">H3</button>
                             <button class="btn w-[80px] seats">H4</button>
                         </div>
-                        <div class="flex items-center gap-10 justify-between">
+                        <div class="flex items-center gap-2 lg:gap-10 justify-between">
                             <h1>I</h1>
                             <button class="btn w-[80px] seats">I1</button>
                             <button class="btn w-[80px] seats">I2</button>
                             <button class="btn w-[80px] seats">I3</button>
                             <button class="btn w-[80px] seats">I4</button>
                         </div>
-                        <div class="flex items-center gap-10 justify-between">
+                        <div class="flex items-center gap-2 lg:gap-10 justify-between">
                             <h1>J</h1>
                             <button class="btn w-[80px] seats">J1</button>
                             <button class="btn w-[80px] seats">J2</button>
@@ -276,7 +276,7 @@
                     </div>
                 </div>
 
-                <div class=" w-[430px] mt-[50px] pr-7">
+                <div class=" lg:w-[430px] mt-[50px] lg:pr-7">
                     <h1 class="text-xl font-extrabold  mb-5">Select your Seat</h1>
                     <hr>
 
@@ -296,16 +296,21 @@
                         </div>
 
                         <div class="join" id="cuponInputField">
-                            <input id="cupon" class="input rounded-r-none border-none join-item w-[280px]"
+                            <input id="cupon" class="input rounded-r-none border-none join-item w-[260px] lg:w-[280px]"
                                 placeholder="Have any Cupons" />
                             <button
                                 class="btn rounded-l-none  rounded-r-xl bg-[#1DD100] border-[5px] border-white hover:bg-red-800 join-item"
-                                id="applyBtn">Apply</button>
+                                id="applyBtn" disabled>Apply</button>
+                        </div>
+
+                        <div class="flex justify-between hidden" id="discount-conainer">
+                            <h1>Discount</h1>
+                            <h1>BDT <span id="discount">00</span></h1>
                         </div>
 
                         <div class="flex justify-between">
                             <h1>Grand Total</h1>
-                            <h1>BDT <span id="grandTotalPrice">1100</span></h1>
+                            <h1>BDT <span id="grandTotalPrice">00</span></h1>
                         </div>
                     </div>
 
@@ -322,7 +327,7 @@
                             <label for="phone"
                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone
                                 Number*</label>
-                            <input type="number" id="password"
+                            <input type="number" id="number"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 placeholder="Enter your phone number" />
                         </div>
@@ -334,7 +339,7 @@
                                 placeholder="Enter your email id" />
                         </div>
                     </form>
-                    <button class="text-white bg-[#1DD100] btn w-full" id="next">Next</button>
+                    <button class="text-white bg-[#1DD100] btn w-full" id="next" disabled>Next</button>
 
                     <div class="flex justify-around mt-6 mb-10">
                         <a href="#" class=" border-b-2 border-black">Terms and Conditions</a>
@@ -349,7 +354,7 @@
 
     <!-- modal-frame -->
 
-    <div class="flex flex-col justify-center items-center w-[500px] mx-auto mt-[10%] gap-3 hidden" id="modal">
+    <div class="flex flex-col justify-center items-center lg:w-[500px] mx-auto mt-[10%] gap-3 hidden" id="modal">
         <img src="images/success.png" alt="">
         <h1 class="uppercase text-[#27AE60] text-3xl font-medium text-center">success</h1>
         <p class="text-center">Thank you for Booking Our Bus Seats. <br>
@@ -363,7 +368,7 @@
 
     <footer class="text-white bg-black" id="footer">
 
-        <footer class="footer p-10 bg-base-200 text-base-content flex justify-around gap-[100px] bg-black text-white">
+        <footer class="footer p-10 bg-base-200 text-base-content flex flex-col lg:flex-row justify-around lg:gap-[100px] bg-black text-white">
             <aside>
                 <h1>P-Ticket</h1>
                 <p>P-Ticket is a digital platform to make your daily commuting better.</p>
@@ -382,7 +387,7 @@
         </footer>
         <hr class="border-t-2 border-white border-dashed mx-[150px]">
 
-        <div class="flex justify-around mt-10 pb-10">
+        <div class="flex justify-around mt-10 pb-10 mx-10 flex-col lg:flex-row">
             <h1>@all rights reserved, P-Ticket services limited.2024</h1>
 
             <div class="flex gap-10">

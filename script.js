@@ -11,26 +11,46 @@ function available() {
     let available = document.getElementById('availableSeats').innerText
     available = available - 1;
     document.getElementById('availableSeats').innerText = available
-    // console.log(available)
 }
+
+document.getElementById('number').addEventListener('keyup', () => {
+    console.log(document.getElementById('number').value)
+    let seatAdd = parseInt(document.getElementById('seat-added').innerText)
+    let num = document.getElementById('number').value
+    if (seatAdd != 0 && num != 0) {
+        document.getElementById('next').disabled = false
+    }
+})
+
 
 function seatAdded() {
     let seatAdd = parseInt(document.getElementById('seat-added').innerText)
     seatAdd = seatAdd + 1;
     document.getElementById('seat-added').innerText = seatAdd
-    // console.log(seatAdd)
+
+    if (count == 3) {
+        alert("You can't buy more than 4 tickets at a time")
+        document.getElementById('applyBtn').disabled = false
+    }
+    let num = document.getElementById('number').value
+    if (seatAdd != 0 && num != 0) {
+        document.getElementById('next').disabled = false
+    }
 }
+
+
+let count = 0;
 
 function appendList(seat) {
     let seatNo = seat.innerText
-    let seatClass = 'Economoy'
-    let price = 550
     let list = document.getElementById('seatList')
 
     let node = document.createElement('div')
     node.classList.add('flex', 'justify-between')
     node.innerHTML = '<h1 id="seat-no">' + seatNo + '</h1><h1>Economoy</h1><h1>550</h1>'
     list.append(node)
+    count++
+    console.log(count)
 }
 
 function price() {
@@ -47,15 +67,16 @@ function price() {
 let seat = document.querySelectorAll(".seats")
 
 for (let index = 0; index < seat.length; index++) {
-    const element = seat[index];
+    let element = seat[index];
     element.addEventListener('click', () => {
-        if (seat[index].classList[3] != 'bg-[#1DD100]') {
+        let booked = document.getElementById('seat-added').innerText
+        if (seat[index].classList[3] != 'bg-[#1DD100]' && count < 4) {
+            seat[index].classList.add("bg-[#1DD100]")
             available()
             seatAdded()
             appendList(seat[index])
             price()
         }
-        seat[index].classList.add("bg-[#1DD100]")
     })
 }
 
@@ -66,18 +87,27 @@ function discount() {
     let input = document.getElementById('cupon').value
     if (input === 'NEW15') {
         document.getElementById('cuponInputField').classList.add('hidden')
+        document.getElementById('discount-conainer').classList.remove('hidden')
 
         gt = document.getElementById('grandTotalPrice').innerText
+
+        document.getElementById('discount').innerText = gt * 0.15
 
         document.getElementById('grandTotalPrice').innerText = gt - gt * 0.15
     }
 
     else if (input === 'Couple 20') {
         document.getElementById('cuponInputField').classList.add('hidden')
+        document.getElementById('discount-conainer').classList.remove('hidden')
 
         gt = document.getElementById('grandTotalPrice').innerText
 
+        document.getElementById('discount').innerText = gt * 0.20
+
         document.getElementById('grandTotalPrice').innerText = gt - gt * 0.2
+    }
+    else{
+        alert('Wrong Cupon Code')
     }
 }
 
