@@ -106,7 +106,7 @@ function discount() {
 
         document.getElementById('grandTotalPrice').innerText = gt - gt * 0.2
     }
-    else{
+    else {
         alert('Wrong Cupon Code')
     }
 }
