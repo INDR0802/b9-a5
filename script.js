@@ -132,23 +132,6 @@ document.getElementById('applyBtn').addEventListener('click', () => {
 
 // apply-button
 
-
-// next-button
-
-function showModal() {
-    document.getElementById('header').classList.add('hidden')
-    document.getElementById('main').classList.add('hidden')
-    document.getElementById('footer').classList.add('hidden')
-    document.getElementById('modal').classList.remove('hidden')
-
-}
-
-document.getElementById('next').addEventListener('click', () => {
-    showModal()
-})
-// next-button
-
-
 // continue-btn
 
 function removeAllChildNodes(parent) {
@@ -159,34 +142,7 @@ function removeAllChildNodes(parent) {
 
 
 function restrart() {
-    document.getElementById('header').classList.remove('hidden')
-    document.getElementById('main').classList.remove('hidden')
-    document.getElementById('footer').classList.remove('hidden')
-    document.getElementById('modal').classList.add('hidden')
-    document.getElementById('totalPrice').innerText = '00'
-    document.getElementById('grandTotalPrice').innerText = '00'
-    document.getElementById('seat-added').innerText = '00'
-    document.getElementById('availableSeats').innerText = '40'
-    document.getElementById('number').value = ' '
-
-    document.getElementById('cuponInputField').classList.remove('hidden')
-    document.getElementById('discount-conainer').classList.add('hidden')
-
-
-    let seat = document.querySelectorAll(".seats")
-
-    for (let index = 0; index < seat.length; index++) {
-        let element = seat[index];
-        if (element.classList[3] == 'bg-[#1DD100]') {
-            element.classList.remove('bg-[#1DD100]')
-        }
-    }
-
-    count = 0
-
-    const container = document.querySelector('#seatList');
-    removeAllChildNodes(container);
-
+    window.location.reload()
 }
 
 document.getElementById('continue').addEventListener('click', () => {
