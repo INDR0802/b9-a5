@@ -13,6 +13,11 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body class="p-5 lg:p-0">
@@ -282,7 +287,7 @@
                     <hr>
 
                     <div class="bg-[#F7F8F8] p-5 rounded-[10px] mt-10">
-                        <div id="seatList">
+                        <div>
                             <div class="flex justify-between mb-3">
                                 <h1>Seats <span class="bg-green-500 px-2 rounded-2xl" id="seat-added">0</span></h1>
                                 <h1 class="-ml-[30px]">Class</h1>
@@ -290,6 +295,7 @@
                             </div>
 
                         </div>
+                        <div id="seatList"></div>
                         <hr class="my-5">
                         <div class="flex justify-between mb-2">
                             <h1>Total Price</h1>
@@ -370,10 +376,10 @@
     <footer class="text-white bg-black" id="footer">
 
         <footer
-            class="footer p-10 bg-base-200 text-base-content flex flex-col lg:flex-row justify-around lg:gap-[100px] bg-black text-white">
+            class="footer p-10 bg-base-200 text-base-content flex flex-col lg:flex-row justify-around lg:gap-[250px] bg-black text-white">
             <aside>
-                <h1>P-Ticket</h1>
-                <p>P-Ticket is a digital platform to make your daily commuting better.</p>
+                <h1 class="text-2xl">P-Ticket</h1>
+                <p class="text-sm">P-Ticket is a digital platform to make your daily commuting better.</p>
             </aside>
 
             <nav>
